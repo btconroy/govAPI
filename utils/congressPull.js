@@ -11,7 +11,7 @@ function sliceArr(arr, arrLength) {
 }
 
 
-module.exports = membersPull = fetch('https://ballotpedia.org/List_of_current_members_of_the_U.S._Congress')
+module.exports = membersPull = fetch('https://www.congress.gov/help/field-values/member-bioguide-ids')
     .then(res => {
         return res.text()
     })
