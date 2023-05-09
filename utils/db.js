@@ -1,10 +1,10 @@
 const mysql = require('mysql2');
 
 const connection = mysql.createPool({
-    host: 'localhost',
+    host: process.env.DB_HOST,
     user: process.env.DB_USERNAME,
-    database: 'gov_data',
-    password: process.env.DB_PSW
+    database: process.env.DB_NAME,
+    password: process.env.DB_PASSWORD
 });
 
 
